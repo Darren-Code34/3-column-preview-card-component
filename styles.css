@@ -1,0 +1,97 @@
+/*Mobil Design */
+
+body{
+    background-color:  hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+.container{
+    margin: 20px 20px;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+
+.card{
+    border: 1px solid transparent;
+    padding: 45px;
+}
+
+.title{
+    font-family: 'Big Shoulder Display', sans-serif;
+}
+
+.description{
+    font-family:'Lexend Deca', sans-serif ;
+}
+
+.sedans{
+    background-color:hsl(31, 77%, 52%) ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sedans .btn{
+    color:hsl(31, 77%, 52%);
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs .btn{
+    color:hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color:hsl(179, 100%, 13%) ;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.luxury .btn{
+    color:hsl(179, 100%, 13%);
+}
+
+.btn{
+    display: block;
+    margin-top: 20px;
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 100px;
+    height: 25px;
+}
+
+/*Desktop design*/
+
+@media only screen and (min-width:800px){
+    .container{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        margin: auto 17%;
+        margin-top: 10%;
+    }
+
+    .description{
+        margin-top: 40px;
+    }
+
+    .sedans{
+        grid-column: 1;
+        border-top-right-radius:0 ;
+        border-bottom-left-radius:5px ;
+    }
+
+    .suvs{
+        grid-column: 2;
+    }
+
+    .luxury{
+        grid-column: 3;
+        border-bottom-left-radius:0 ;
+        border-top-right-radius: 5px;
+    }
+
+    .btn{
+        margin-top: 60px;
+    }
+}
